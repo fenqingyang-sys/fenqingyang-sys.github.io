@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="study way," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="前段时间无意中刷知乎刷到了一篇文章名字是学习编程的正确姿态，看完之后内心还是很有感触的。一直觉得这个世界上思想之间的碰撞才是最美妙的，在看完这篇文章之后，觉得收获了一些东西。 第一个便是对编程的学习方式，个人觉得现在国内的教学和答主说的很像，给你一本厚厚的教材，老师念着PPT如果你认真的听得话，你可能会听懂，但是你会发现你不会写，如果你不认真听的话，那么你是既听不懂也不会写，于是你去书店满怀希望的">
+<meta name="keywords" content="study way">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello Programing">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;09&#x2F;06&#x2F;%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3&#x2F;index.html">
+<meta property="og:site_name" content="一个流浪的灵魂">
+<meta property="og:description" content="前段时间无意中刷知乎刷到了一篇文章名字是学习编程的正确姿态，看完之后内心还是很有感触的。一直觉得这个世界上思想之间的碰撞才是最美妙的，在看完这篇文章之后，觉得收获了一些东西。 第一个便是对编程的学习方式，个人觉得现在国内的教学和答主说的很像，给你一本厚厚的教材，老师念着PPT如果你认真的听得话，你可能会听懂，但是你会发现你不会写，如果你不认真听的话，那么你是既听不懂也不会写，于是你去书店满怀希望的">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-06T22:57:58.000Z">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/09/06/编程思想/"/>
+
+
+
+
+
+  <title>Hello Programing | 一个流浪的灵魂</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">一个流浪的灵魂</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/06/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="一叶扁舟">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/32269?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一个流浪的灵魂">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Hello Programing</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-06T19:04:00+08:00">
+                2019-09-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%80%9D%E6%83%B3/" itemprop="url" rel="index">
+                    <span itemprop="name">思想</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/09/06/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/09/06/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/09/06/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/" class="leancloud_visitors" data-flag-title="Hello Programing">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>前段时间无意中刷知乎刷到了一篇文章名字是学习编程的正确姿态，看完之后内心还是很有感触的。一直觉得这个世界上思想之间的碰撞才是最美妙的，在看完这篇文章之后，觉得收获了一些东西。</p>
+<p>第一个便是对编程的学习方式，个人觉得现在国内的教学和答主说的很像，给你一本厚厚的教材，老师念着PPT如果你认真的听得话，你可能会听懂，但是你会发现你不会写，如果你不认真听的话，那么你是既听不懂也不会写，于是你去书店满怀希望的去买了好几本厚厚的C语言，真实的情况是那些经典的教材在网上都有PDF格式，而实际上你买的教材在心血来潮的激情过后，他们就在默默的吃灰。然后慢慢地你就会怀疑自己是不是不适合学习编程，学来学去，学着前面的忘着后面的，水平一直得不到增长。如果三年都是这样，那么必然凉凉。</p>
+<p>其实佛和魔只在一念之间。学习编程你应该先接触这个环境，你应该自顶向下的去学习编程。你要有自学的能力，要学会使用搜索引擎去解决自己遇到的问题，可以说基本上你遇到的90%<br>以上的问题都可以在搜索引擎上去解决。你还要学会使用优秀的工具，有时候会发现一个现象当Google可以精准的定位你的问题的时候，很多人还在百度一堆的广告和乱七八糟的结果中找不到问题的答案，当VScode越来越优秀的时候你还在机房里面用着vc6看着密密麻麻的报错，有人说工具不重要重要的是能力，其实工具同样重要，优秀的工具可以让你有一个舒畅的工作环境，可以让你高效的开发。</p>
+<p>学习编程首先要打开你的视野，而打开你视野强有力的工具之一是Google。在Google上面你可以通过github上看到这个世界上最牛逼的代码，可以看到很多优秀的项目，你可以在上面用PR提交你遇到的问题，一般你今天提交第二天会收到国外友人的回复，我第一次提交问题在第二天上午看到回复的时候，那一刻很激动。你可以知道你学的知识可以干什么。当你改进或者完成一个项目的时候，那种成就感所带来的的正反馈将会是你不断学习的推进力。另一个除了github的社区便是stackflow,你可以在stackoverflow上面发起你的问题，一般都会有人给你回复。</p>
+<p>虽然这些在看过这篇文章之前我都有过类似的体会，作者所提到的工具和社区我也都用过，整篇文章给我最大的触动是一种思想，开发者思想。开发者精神是指, 从学习编程第一天起, 你的目标, 你所做的事, 永远不是以要学会什么为目标, 而是以开发出什么为目标, 深刻意识到你学习的一切, 最终是为了你的开发而服务的。与之对应的便是学生气，从学习编程的第一天起, 就把自己当学生, 上课听讲记笔记为第一位, 记忆知识点为第一位, 买教材读教材为第一位, 追求学会什么, 而不是用它开发出什么。两种思想对应的行为举例，以Java学习为例。学生气的行为模式：记笔记, 追求把这个语言的每个知识点都记得很清楚, 追求一种”内功”的修炼, 在这个过程中, 从来不想着用它去”创造”什么. 在学习的第一天起, 他给自己定下了一个目标:”我这个学期一定要把这个语言的基础打牢, 最后在考试中取得高分, 并且为以后的学习提供更坚实的基础。开发者行为模式：先大体了解一下Java语言在哪些领域比较强势,做一个简单的调研, 得出了Java在Web领域很强势这一个信号, 于是在学习Java的第一天起, 他就给自己定下了一个目标: “我要在半年内通过学习Java, 运用Java做出一个中小型的, 基于Web的企业管理后台”<br>记住现实世界中的人，处理现实世界中的问题，往往不是一口气完成所有的知识储备，然后一口气顺畅的进行开发进行实践。</p>
+<p>经常遇到的问题便是学过的知识忘了怎么办，其实如果你具备开发者精神, 那么你根本不会理会这个问题, 因为, 你开发出的东西, 你做出的产品, 它就是永久存在在这个世界上的, 你的成就感来源于真实的, 具体的, 可持久延续的项目中, 而不是来源于”我学会了什么”.既然我们想获得反馈, 那么一个很现实的建议就是, 在Github上创建你的第一个开源代码仓库, 长期地, 稳定地commit, 当然, 至于这个仓库到底是干啥的, 这个因人而异, 有可能是你自己开发的一个VScode插件, 有可能是你自己写的读书笔记, 在这个不断地commit的过程中, 感受你的代码仓库不断增长不断完善的过程中, 你会获得一个比较持久的反馈和成就感, 一旦有了反馈和成就感, 那么你的学习动力就会一直保持, 也可以从学习中获得快乐.然后你需要一个个人博客，用来记录你的学习历程，每当你学会一个东西，写下来，这个过程就是一个输出的过程，在写的时候你要考虑别人能看懂你的文章，这就需要你自己本身对学习的东西很清楚才能写得清楚。然后当你发现你的个人博客得到很多赞的时候，成就感又会推着你继续学习，你会很快乐。再此简短的回顾一下自己的大一，接触过很多东西，从一开始没怎么接触计算机的纯小白，到使用google与世界接轨，到个人博客的搭建，到vps的搭建和虚拟主机的了解，再到建模和MATLAB的接触，到当下深度学习神经网络的初步体验，到一些常用的国外软件如：twiter,youtube,hbonetflixyoutubemusic，twitch，等的接触和使用。每一个模块回想起来自己都走过很多弯路，都有过痛苦的经历，但是与此同时，我也打开了自己狭隘的视野，开始接触许多新的世界，慢慢开始确认自己想要的是什么，时间如白驹过隙，大一一转眼还是匆匆理我而去，未来还在前方招手，好好学习，好好生活。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/study-way/" rel="tag"># study way</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/06/markdown/" rel="next" title="markdown基本用法">
+                <i class="fa fa-chevron-left"></i> markdown基本用法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/07/git%E5%91%BD%E4%BB%A4/" rel="prev" title="git命令的使用">
+                git命令的使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://avatars1.githubusercontent.com/u/32269?v=3&s=460"
+                alt="一叶扁舟" />
+            
+              <p class="site-author-name" itemprop="name">一叶扁舟</p>
+              <p class="site-description motion-element" itemprop="description">风雨兼程</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/fenqingyang-sys" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="1716436902@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-globe"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/风雨中等你" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">一叶扁舟</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: '52091011',
+            repo: 'fen-blg-ocomment',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '8602996664ee8e208557a97e5d3751495dc36241',
+            
+                client_id: 'Iv1.0971d9941779f9b9'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'Y22XzcrJjuz8UxN3nEDvgaEk-gzGzoHsz',
+        appKey: 'x3EUFAGhsV4RXXiqlLOGVEWU',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("Y22XzcrJjuz8UxN3nEDvgaEk-gzGzoHsz", "x3EUFAGhsV4RXXiqlLOGVEWU");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
